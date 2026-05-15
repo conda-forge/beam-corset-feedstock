@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.4.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/beam-corset/beam_corset-{{ version }}.tar.gz
-  sha256: 2e4ae78e12bd4994ac7aa9b4ebb12206a583179359a4ef3c35883ceba210f860
+  sha256: 3004bccddb4521bc9d5e33030e21d09cc3c85b41c1eb1d10cb226904be105429
 
 build:
   noarch: python
@@ -21,10 +21,13 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=2.3.4,<3
-    - scipy >=1.16.3,<2
-    - pandas >=2.3.3,<3
+    - ipywidgets >=8.1.8,<9
     - matplotlib-base >=3.10.7,<4
+    - numpy >=2.3.4,<3
+    - pandas >=2.3.3,<3
+    - pyyaml >=6.0.3,<7
+    - scipy >=1.16.3,<2
+    - tqdm >=4.67.3,<5
 
 test:
   imports:
