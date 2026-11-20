@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/b/beam-corset/beam_corset-{{ version }}.tar.gz
-  sha256: 2d3254a2a3f364e4d30212f3ad4510a2205c5ef84688f955bf7f60ddd4adf94d
+  sha256: 62d459fa67d2f62bde19a13e5770184e80da68012d849dddda427d2f6a14648f
 
 build:
   noarch: python
